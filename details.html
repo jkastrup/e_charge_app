@@ -15,22 +15,84 @@
     </head>
     
     <body>
-<!-- Site Navigation -->
-    	<nav>
-        	<ol>
-            	<li><a href="index.html">Home</a></li>
-                <li><a href="search.html">Search</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About</a></li>
-            </ol>
-        </nav>
+    
+<!-- Logo and Login -->
+    	<header>
+            <!-- Site Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                            <span class="sr-only">Toggle nav</span>
+                            <span class="icon-bar"</span>
+                            <span class="icon-bar"</span>
+                            <span class="icon-bar"</span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">E-Charge</a>
+                    </div><!-- end .navbar-header -->
+                    
+                    <!-- links and content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                        
+                        <!-- navbar links -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="favorites.html">Favorites</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul><!-- end navbar links -->
+                        
+                        <!-- search, login, register -->
+                        <form class="navbar-form navbar-right" role="search">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit" class="btn btn-default">Search</button>
+                            <div class="form-group">
+                                <button id="signInBtn" type="button" class="btn btn-default navbar-btn userbtn">Sign In</button>
+                                <button id="registerBtn" type="button" class="btn btn-default navbar-btn userbtn">Register</button>
+                            </div><!-- end form-group -->
+                        </form><!-- end search, login, register -->
+                    </div><!-- end #bs-navbar-collapse -->
+                </div>
+            </nav>
+        </header>
+        
+        
+        
+        <!-- site footer -->   
+        <footer>
+        	<div class="row">
+           		<p class="panel-title col-xs-12">&copy; 2014 E-Charge Finder</p>
+                <div class="fbox col-xs-3">
+                	<p>E-Charge</p>
+                	<p><a href="#">Get Started</a></p>
+                    <p><a href="#">Log In</a></p>
+                </div>
+                <div class="fbox col-xs-3">
+                	<p>About</p>
+                    <p><a href="#">What we do</a></p>
+                    <p><a href="#">How it works</a></p>
+                </div>
+                <div class="fbox col-xs-3">
+                	<p>Help</p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#"></a></p>
+                </div>
+                <div class="fbox connect col-xs-3">
+                	<p>Connect</p>
+                    <p><a href="www.facebook.com"><img src="images/fb_logo_blue.png" class="icon"> Facebook</a></p>
+                    <p><a href="www.twitter.com"><img src="images/Twitter_logo_blue.png" class="icon"> Twitter</a></p>
+                </div>
+            </div>
+        </footer>
         
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    	<!-- Include all compiled plugins (below), or include individual files as needed -->
-    	<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+        <script src="js/main.js"></script>	
 	</body>
 </html>

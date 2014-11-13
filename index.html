@@ -4,14 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="application-name" content="E-Charge Finder">
+        <meta name="keywords" content="charge, charging, electric, car, station, fuel, find, locate">
+        <meta name="description" content="Web based application that locates electric car charging stations with the help of Google Maps">
+        <meta name="author" content="Jason Kastrup">
+        
         <title>E-Charge App</title>
+        
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
         
         <!-- CSS Reset -->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
     </head>
     
 <!-- Main content -->
@@ -19,25 +27,143 @@
     
 <!-- Logo and Login -->
     	<header>
-        	<!-- Place code here -->
-            
+            <!-- Site Navigation -->
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                            <span class="sr-only">Toggle nav</span>
+                            <span class="icon-bar"</span>
+                            <span class="icon-bar"</span>
+                            <span class="icon-bar"</span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">E-Charge</a>
+                    </div><!-- end .navbar-header -->
+                    
+                    <!-- links and content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                        
+                        <!-- navbar links -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="favorites.html">Favorites</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul><!-- end navbar links -->
+                        
+                        <!-- search, login, register -->
+                        <form class="navbar-form navbar-right" role="search">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit" class="btn btn-default">Search</button>
+                            <div class="form-group">
+                                <button id="signInBtn" type="button" class="btn btn-default navbar-btn userbtn">Sign In</button>
+                                <button id="registerBtn" type="button" class="btn btn-default navbar-btn userbtn">Register</button>
+                            </div><!-- end form-group -->
+                        </form><!-- end search, login, register -->
+                    </div><!-- end #bs-navbar-collapse -->
+                </div>
+            </nav>
         </header>
         
-<!-- Site Navigation -->
-    	<nav>
-        	<ol>
-            	<li><a href="index.html">Home</a></li>
-                <li><a href="search.html">Search</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About</a></li>
-            </ol>
-        </nav>
-    
-    
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <!-- Navigation Map -->
+        <div class="container nav_map_box">
+        	<div class="row">
+                <p class="text-center h3">Quick Results</p>
+                <p class="text-center"><small>Based on your location data</small></p>
+        		<div id="map_canvas" class="col-xs-12 center-block"></div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+        	<!-- About Box -->
+        	<div id="about" class=" col-md-6 col-xs-offset-1 registration">
+                <p>What is E-Charge Finder?<p>
+                <p>E-Charge Finder is the fastest and easiest way to find chargin stations near you.  At Home, or on the go, E-Charge finder will get you moving.</p>
+                <p>Find an electric charging station for your car is easy! Load the app with your GPS settings enabled, or search for a location by address or keyword</p>
+            </div>
+            
+            <!-- Register Box -->
+            <div class="col-md-3 col-xs-offset-1 registration">
+            	<p>Not a Member?</p>
+                <p>Members can save a Home address, favorite chargin stations, and more!  Click the button below to register with E-Charge Finder</p>
+                
+                <button type="button" class="btn btn-default pull-right userbtn">Register</button>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+        <footer>
+        	<div class="row">
+           		<p class="panel-title col-xs-12">&copy; 2014 E-Charge Finder</p>
+                <div class="fbox col-xs-3">
+                	<p>E-Charge</p>
+                	<p><a href="#">Get Started</a></p>
+                    <p><a href="#">Log In</a></p>
+                </div>
+                <div class="fbox col-xs-3">
+                	<p>About</p>
+                    <p><a href="#">What we do</a></p>
+                    <p><a href="#">How it works</a></p>
+                </div>
+                <div class="fbox col-xs-3">
+                	<p>Help</p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#"></a></p>
+                </div>
+                <div class="fbox connect col-xs-3">
+                	<p>Connect</p>
+                    <p><a href="www.facebook.com"><img src="images/fb_logo_blue.png" class="icon"> Facebook</a></p>
+                    <p><a href="www.twitter.com"><img src="images/Twitter_logo_blue.png" class="icon"> Twitter</a></p>
+                </div>
+            </div>
+        </footer>
+        
+ 
+    	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-1.11.1.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+        <script src="js/main.js"></script>	
+        
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

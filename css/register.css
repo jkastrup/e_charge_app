@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+.userbtn {
+	border: none;	
+}
+#register_box {
+	margin-top: 125px;	
+}
+
+footer {
+	position:absolute;
+	bottom: 0;
+	width: 100%;	
+}

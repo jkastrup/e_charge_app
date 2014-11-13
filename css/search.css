@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#search_field {
+	margin-top: 100px;
+	float: none;
+}
+#search_field form {
+	margin: 0 auto;
+	float: none;
+}
+#search_field form button {
+	margin: 5px auto;	
+}
+.nav_map_box {
+	margin-top: 5px;	
+}
+#map_canvas {
+	margin-top: 5px;
+	width: 750px;
+	height: 600px;
+}
+#nearby_results {
+	margin-top: 5px;
+	border: 2px solid #444;
+	height: 600px;
+	background-color: #e7e7e7;
+	color: #63C;
+
+}
+#nearby_results .h2 {
+	border-bottom: 2px solid #444;
+	padding: 5px 0;
+	font-size: 1.5em;
+}
