@@ -1,11 +1,27 @@
 @charset "UTF-8";
 /* CSS MAIN */
-body {
+html, body {
 	background-color: #66C;
+	height: 100%;
+	min-height: 100%;
 }
+.wrapper {
+	min-height: 100%;
+}
+#main {
+	overflow: auto;
+	padding-bottom: 200px; /* must be the same height as footer */
+}
+.
 
+/* Navigation */
+ul.nav {
+	font-family: 'Montserrat', sans-serif;	
+}
 .navbar-brand {
 	font-style: italic;	
+	font-size: 1.8em;
+	font-family: 'Cookie', cursive;
 }
 .form-group button:first-child {
 	margin-left: 15px;	
@@ -17,12 +33,18 @@ body {
 	float:none;
 	color: #fff;
 }
+
 .nav_map_box p:first-child {
-	margin-bottom: 0px;	
+	margin-bottom: 0px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 2em;
+	text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+
 }
 .nav_map_box p:last-child{
 	margin-top: 2px;
 	font-size: .8em;
+	text-transform: lowercase;
 }
 #map_canvas{
 	width: 1000px;
@@ -30,7 +52,14 @@ body {
 	margin: 0 auto;
 	float: none;
 	border: 2px solid #444;
-	border-radius: 2px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
 }
 
 /* Registration panel */
@@ -40,12 +69,20 @@ body {
 	border: 1px solid #039;
 	padding-top: 3px;
 	padding-bottom: 5px;
-	margin-top: 10px;
-	border-radius: 5px;
+	margin-top: 50px;
+	margin-bottom: -100px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
 }
 .registration p:first-child {
 	color: #000;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -67,6 +104,11 @@ body {
 
 /* Footer */
 footer {
+	position: relative;
+	margin-top: -200px; /*Negative value = Footer height */
+	height: 200px;
+	clear: both;
+	
 	margin-top: 20px;
 	padding: 20px 0 40px;
 	text-align: center;	
@@ -101,6 +143,12 @@ footer .fbox p a:hover {
 	text-decoration: underline;
 }
 
+/* Image fixes */
+.thumbnail {
+	max-width: 50%;
+	max-height: 50%;
+	margin-left: 10px;
+}
 .icon {
 	width: 20px;
 	height: 20px;	

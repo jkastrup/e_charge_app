@@ -1,8 +1,20 @@
 @charset "UTF-8";
-/* CSS Document */
+/* CSS Sign_In.html */
 
+/* Defaults */
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+}
+
+
+/* Sign In Form */
 #login_box {
 	margin-top: 75px;
+	overflow: auto;
+	padding-bottom: 200px; /* Must be same height as footer */
 }
 #login_box button {
 	background-color: #63c;
@@ -11,7 +23,6 @@
 #login_box button:hover {
 	background-color: #66F;	
 }
-
 .form-signin
 {
     max-width: 330px;
@@ -86,3 +97,26 @@
     display: block;
     margin-top: 10px;
 }
+
+/* Footer */
+footer {
+	position: relative;
+	margin-top: -200px; /* Negative value = Footer height */
+	height: 200px;
+	clear: both;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

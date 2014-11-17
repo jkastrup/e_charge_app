@@ -4,7 +4,18 @@
 
 #search_field {
 	margin-top: 100px;
+	padding-top: 20px;
 	float: none;
+}
+#search_field input{
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+}
+button.btn.btn-default.center-block {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
 }
 #search_field form {
 	margin: 0 auto;
@@ -20,6 +31,10 @@
 	margin-top: 5px;
 	width: 750px;
 	height: 600px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 #nearby_results {
 	margin-top: 5px;
@@ -27,10 +42,21 @@
 	height: 600px;
 	background-color: #e7e7e7;
 	color: #63C;
+	overflow: hidden;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
 
 }
 #nearby_results .h2 {
 	border-bottom: 2px solid #444;
 	padding: 5px 0;
 	font-size: 1.5em;
+	margin-bottom: 10px;
+	text-shadow: none;
 }
