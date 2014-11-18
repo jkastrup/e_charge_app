@@ -26,36 +26,8 @@
     } else {	// Error Response if GeoLocation is not supported
         document.getElementById('map_canvas').innerHTML = 'No Geolocation Support.';
     }
-    
-	// Sign In button
-	$("#signInBtn").click(function(){
-		window.location.href="sign_in.html";
-	});
-	
-	// Register button
-	$("#registerBtn").click(function(){
-		window.location.href="register.html";
-	});
+    	
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-})(jQuery);
+})(jQuery); // End self-executing function

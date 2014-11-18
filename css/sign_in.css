@@ -11,6 +11,20 @@ html, body {
 
 
 /* Sign In Form */
+.title_box {
+	margin-bottom: -100px;
+}
+.login-title
+{
+	font-family: 'Fredoka One', cursive;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: 400;
+	font-size: 2em;
+    display: block;
+	text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+	
+}
 #login_box {
 	margin-top: 75px;
 	overflow: auto;
@@ -71,13 +85,6 @@ html, body {
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;	
 }
-.login-title
-{
-    color: #e7e7e7;
-    font-size: 18px;
-    font-weight: 400;
-    display: block;
-}
 .profile-img
 {
     width: 96px;
@@ -104,8 +111,7 @@ footer {
 	margin-top: -200px; /* Negative value = Footer height */
 	height: 200px;
 	clear: both;
-}
-	
+} 
 	
 	
 	

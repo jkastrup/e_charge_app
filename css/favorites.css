@@ -1,21 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-
-#main {
-	margin-top: 100px;
-	
-}
-
-.h2 {
-	font-family: 'Fredoka One', cursive;
-	font-weight: bold;
-	font-size: 2em;
-	text-align: center;
-	color: #fff;
-	text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
-	margin-top: 10px;
-}
-
 .tmn {
 	position: relative;
 	border: 2px solid #6CF;
@@ -74,6 +58,10 @@
 	background: -o-linear-gradient(top,  rgba(255,124,216,1) 0%,rgba(253,137,215,1) 49%,rgba(251,166,225,1) 50%,rgba(252,236,252,1) 100%);
 	background: -ms-linear-gradient(top,  rgba(255,124,216,1) 0%,rgba(253,137,215,1) 49%,rgba(251,166,225,1) 50%,rgba(252,236,252,1) 100%);
 	background: linear-gradient(to bottom,  rgba(255,124,216,1) 0%,rgba(253,137,215,1) 49%,rgba(251,166,225,1) 50%,rgba(252,236,252,1) 100%);
+	
+	-webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.3);
 }
 
 

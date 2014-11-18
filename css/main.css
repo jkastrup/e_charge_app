@@ -8,6 +8,22 @@ html, body {
 .wrapper {
 	min-height: 100%;
 }
+
+/* Page Title */
+.page_title {
+	color: #fff;
+	font-family: 'Fredoka One', cursive;
+	font-size: 2em;
+	text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
+	margin-top: 100px;
+}
+.page_title + p {
+	margin-top: -15px;
+	text-transform: lowercase;
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;	
+}
 #main {
 	overflow: auto;
 	padding-bottom: 200px; /* must be the same height as footer */
@@ -29,23 +45,12 @@ ul.nav {
 
 /* Google Map */
 .nav_map_box{
-	margin: 75px auto 20px;
+	margin: 25px auto 20px;
 	float:none;
 	color: #fff;
 }
 
-.nav_map_box p:first-child {
-	margin-bottom: 0px;
-	font-family: 'Fredoka One', cursive;
-	font-size: 2em;
-	text-shadow: 4px 4px 2px rgba(10, 10, 10, 1);
 
-}
-.nav_map_box p:last-child{
-	margin-top: 2px;
-	font-size: .8em;
-	text-transform: lowercase;
-}
 #map_canvas{
 	width: 1000px;
 	height: 800px;
@@ -67,10 +72,10 @@ ul.nav {
 	background-color: #fff;
 	color: #63c;
 	border: 1px solid #039;
-	padding-top: 3px;
-	padding-bottom: 5px;
+	padding: 15px;
 	margin-top: 50px;
 	margin-bottom: -100px;
+	font-family: 'Montserrat', sans-serif;	
 	
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -86,6 +91,10 @@ ul.nav {
 	font-style: italic;
 	font-weight: bold;
 }
+.registration button {
+	margin-right: 20px;
+}
+
 .userbtn {
 	background-color: #63c;
 	color: #fff;	
@@ -93,6 +102,10 @@ ul.nav {
 .userbtn:hover {
 	background-color: #66f;
 	color: #fff;
+	
+	-webkit-box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.3);
 }
 
 .navbar-default .navbar-nav > .active > a, 

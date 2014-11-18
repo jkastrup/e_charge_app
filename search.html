@@ -40,7 +40,7 @@
                             
                             <!-- navbar links -->
                             <ul class="nav navbar-nav navbar-left">
-                                <li class="active_nav"><a href="search.html">Search</a></li>
+                                <li class="active active_nav"><a href="search.html">Search</a></li>
                                 <li><a href="favorites.html">Favorites</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">About Us</a></li>
@@ -56,11 +56,19 @@
                                 </div><!-- end form-group -->
                             </form><!-- end search, login, register -->
                         </div><!-- end #bs-navbar-collapse -->
-                    </div>
+                        
+                    </div><!-- end .container-fluid -->
                 </nav>
             </header>
             
             <div id="main">
+            	<!-- Page Title -->
+                <div class="container title_box">
+                    <div class="row">
+                        <p class="text-center page_title">Search for a Station</p>
+                	</div>
+              	</div>
+            
                 <div id="search_field" class="row">
                     <form class="form-group col-xs-6 col-xs-offset-3 center-block" role="search">
                         <input type="text" class="form-control" placeholder="Search">
@@ -100,6 +108,32 @@
                                     	<img src="images/thumbnail.svg" alt="thumbnail">
                                 	</a>
                                 </div>
+                                <div class="result">
+                                	<a href="#" class="thumbnail">
+                                    	<img src="images/thumbnail.svg" alt="thumbnail">
+                                	</a>
+                                </div>
+                                <div class="result">
+                                	<a href="#" class="thumbnail">
+                                    	<img src="images/thumbnail.svg" alt="thumbnail">
+                                	</a>
+                                </div>
+                                <div class="result">
+                                	<a href="#" class="thumbnail">
+                                    	<img src="images/thumbnail.svg" alt="thumbnail">
+                                	</a>
+                                </div>
+                                <div class="result">
+                                	<a href="#" class="thumbnail">
+                                    	<img src="images/thumbnail.svg" alt="thumbnail">
+                                	</a>
+                                </div>
+                                <div class="result">
+                                	<a href="#" class="thumbnail">
+                                    	<img src="images/thumbnail.svg" alt="thumbnail">
+                                	</a>
+                                </div>
+                                
                             </div><!-- end .results_display -->
                         
                         </div>
@@ -145,5 +179,6 @@
         <script src="js/bootstrap.min.js"></script>
 		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
         <script src="js/main.js"></script>		
+        <script src="js/nav_btn.js"></script>
     </body>
 </html>

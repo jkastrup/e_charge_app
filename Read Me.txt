@@ -2,7 +2,7 @@ Web Standards Project
 Jason Kastrup
 Prototype Links
 
-GitHub Pages - 
+GitHub Pages - (Does not seem to be updating properly)
 http://jkastrup.github.io/e_charge_app/index.html
 
 GitHub Project - 

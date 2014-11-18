@@ -40,7 +40,7 @@
                             <!-- navbar links -->
                             <ul class="nav navbar-nav navbar-left">
                                 <li><a href="search.html">Search</a></li>
-                                <li class="active_nav"><a href="favorites.html">Favorites</a></li>
+                                <li class="active active_nav"><a href="favorites.html">Favorites</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">About Us</a></li>
                             </ul><!-- end navbar links -->
@@ -55,16 +55,18 @@
                                 </div><!-- end form-group -->
                             </form><!-- end search, login, register -->
                         </div><!-- end #bs-navbar-collapse -->
-                    </div>
+                        
+                    </div><!-- end .container-fluid -->
                 </nav>
             </header>
             
             <div id="main" class="center-block">
-            	<div id="head" class="row center-block">
-                	<div class="col-xs-12 center-block">
-                    	<h2 class="h2">Favorite Stations</h2>
-                    </div>
-                </div>
+            	<!-- Page Title -->
+                <div class="container title_box">
+                    <div class="row">
+                        <p class="text-center page_title">Favorite Stations</p>
+                	</div>
+              	</div>
             
             	<div id="thumbnails" class="container center-block">
                 	<div class="row center-block padme">
@@ -171,15 +173,11 @@
         
        </div><!-- end .wrapper --> 
         
-        
-        
-        
-        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-1.11.1.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
-		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-        <script src="js/main.js"></script>		
+        <script src="js/main.js"></script>
+        <script src="js/nav_btn.js"></script>			
 	</body>
 </html>

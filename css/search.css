@@ -3,7 +3,6 @@
 
 
 #search_field {
-	margin-top: 100px;
 	padding-top: 20px;
 	float: none;
 }
@@ -42,7 +41,8 @@ button.btn.btn-default.center-block {
 	height: 600px;
 	background-color: #e7e7e7;
 	color: #63C;
-	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;	
+	overflow: auto;
 	
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;

@@ -62,16 +62,23 @@
                                 </div><!-- end form-group -->
                             </form><!-- end search, login, register -->
                         </div><!-- end #bs-navbar-collapse -->
-                    </div>
+                        
+                    </div><!-- end .container-fluid -->
                 </nav>
             </header>
             
             <div id="main">
+                <!-- Page Title -->
+                <div class="container title_box">
+                    <div class="row">
+                        <p class="text-center page_title">Quick Results</p>
+                        <p><small>based on your geolocation</small></p>
+                	</div>
+              	</div>
+                
                 <!-- Navigation Map -->
                 <div class="container nav_map_box">
                     <div class="row">
-                        <p class="text-center h3">Quick Results</p>
-                        <p class="text-center"><small>based on your location data</small></p>
                         <div id="map_canvas" class="col-xs-12 center-block"></div>
                     </div>
                 </div>
@@ -132,7 +139,8 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
 		<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-        <script src="js/main.js"></script>	
+        <script src="js/main.js"></script>
+        <script src="js/nav_btn.js"></script>
         
     </body>
 </html>
