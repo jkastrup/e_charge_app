@@ -4,9 +4,13 @@ html, body {
 	background-color: #66C;
 	height: 100%;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 .wrapper {
 	min-height: 100%;
+}
+#main {
+	padding-bottom: 200px; /* must be the same height as footer */
 }
 
 /* Page Title */
@@ -24,13 +28,15 @@ html, body {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;	
 }
-#main {
-	overflow: auto;
-	padding-bottom: 200px; /* must be the same height as footer */
-}
-.
 
 /* Navigation */
+.navbar-toggle {
+	background: #63C;
+}
+.navbar-toggle span {
+	color: #fff;
+}
+
 ul.nav {
 	font-family: 'Montserrat', sans-serif;	
 }
@@ -38,26 +44,24 @@ ul.nav {
 	font-style: italic;	
 	font-size: 1.8em;
 	font-family: 'Cookie', cursive;
+	color: #63C;
 }
 .form-group button:first-child {
 	margin-left: 15px;	
 }
-
-/* Google Map */
-.nav_map_box{
-	margin: 25px auto 20px;
-	float:none;
-	color: #fff;
+.navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+	background-color: #63c;
+	color: #fff; 
 }
 
-
-#map_canvas{
-	width: 1000px;
-	height: 800px;
-	margin: 0 auto;
-	float: none;
-	border: 2px solid #444;
-	
+/* Google Map */
+iframe {
+	width: 100%;
+	height: 600px;
+	border: 3px solid #444;
+	padding: 0;	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -67,14 +71,13 @@ ul.nav {
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
 }
 
-/* Registration panel */
+/* Registration panels */
 .registration {
 	background-color: #fff;
 	color: #63c;
 	border: 1px solid #039;
 	padding: 15px;
 	margin-top: 50px;
-	margin-bottom: -100px;
 	font-family: 'Montserrat', sans-serif;	
 	
 	-webkit-border-radius: 10px;
@@ -108,52 +111,44 @@ ul.nav {
 	box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.3);
 }
 
-.navbar-default .navbar-nav > .active > a, 
- .navbar-default .navbar-nav > .active > a:hover, 
- .navbar-default .navbar-nav > .active > a:focus {
-	background-color: #63c;
-	color: #fff; 
- }
-
 /* Footer */
 footer {
 	position: relative;
 	margin-top: -200px; /*Negative value = Footer height */
 	height: 200px;
 	clear: both;
+	font-family: 'Montserrat', sans-serif;	
 	
 	margin-top: 20px;
 	padding: 20px 0 40px;
-	text-align: center;	
+	text-align: left;	
 	border-top: 2px solid #444;
-	background-color: #e7e7e7;
+	
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(204,204,204,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%);
 }
-footer .panel-title {
+footer .row {
+	margin-top: 50px;
+}
+footer a {
+	color: #63C;
+	padding-right: 20px;
+	padding-left: 16px;
+}
+footer a:last-child {
+	border-right: none;
+}
+footer p {
 	color: #63c;
 	font-weight: bold;
-	font-size: 1.2em;
-	margin-bottom: 15px;	
-}
-footer .fbox {
-	color: #63c;
-	font-style: italic;
-	margin-bottom: 5px;
-}
-footer .fbox p:first-child {
-	margin-bottom: 5px;
-	font-size: 1.2em;	
-}
-footer .fbox p {
-	margin-top: 5px;	
-}
-footer .fbox p a {
-	text-decoration: none;
-	color: #444;
-	font-style: normal;
-}
-footer .fbox p a:hover {
-	color: #60C;
-	text-decoration: underline;
+	font-size: .8em;
+	margin-top: 10px;
+	padding-left: 16px; /* Must be the same as 'footer a' padding-left */
 }
 
 /* Image fixes */
@@ -169,3 +164,78 @@ footer .fbox p a:hover {
 .connect {
 	text-align: left;	
 }
+
+
+
+
+@media (max-width: 930px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+	.navbar-collapse.collapse {
+		display: hidden;
+	}
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+	.navbar-form button[type="submit"] {
+		margin-top: 5px;
+	}
+	#signInBtn {
+		margin-left: 0;
+		float: left;
+		margin-top: 20px;	
+	}
+	#registerBtn {
+		margin-right: 0;
+		margin-top: 20px;
+		float: right;	
+	}
+	footer .row {
+		margin-top: 0;
+	}
+	footer a {
+		clear: left;
+		float: left;
+		margin-top: 5px;
+	}
+	footer p {
+		float: right;
+		margin-right: 15px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

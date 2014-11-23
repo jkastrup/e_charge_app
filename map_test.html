@@ -10,7 +10,7 @@
         <meta name="description" content="Web based application that locates electric car charging stations with the help of Google Maps">
         <meta name="author" content="Jason Kastrup">
         
-        <title>Details | E-Charge App</title>
+        <title>E-Charge App</title>
         
         <!-- Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Yellowtail|Viga|Fredericka+the+Great|Lily+Script+One|Lobster|Fredoka+One|Great+Vibes|Montserrat|Roboto|Play|Hammersmith+One|Lobster+Two|Orbitron|Courgette|Audiowide|Cookie|Sacramento' rel='stylesheet' type='text/css' />
@@ -20,7 +20,6 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/details.css">
 
     </head>
     
@@ -49,7 +48,6 @@
                             <ul class="nav navbar-nav navbar-left">
                                 <li><a href="search.html">Search</a></li>
                                 <li><a href="favorites.html">Favorites</a></li>
-                                <li class="active active_nav"><a href="#">Details</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">About Us</a></li>
                             </ul><!-- end navbar links -->
@@ -73,73 +71,64 @@
                 <!-- Page Title -->
                 <div class="container title_box">
                     <div class="row">
-                        <p class="text-center page_title">Details</p>
-                        <h4 class="text-center">123 Numbers Drive, Variable City, OH 43214</h4> 
+                        <p class="text-center page_title">Quick Results</p>
+                        <p><small>based on your geolocation</small></p>
                 	</div>
               	</div>
                 
-                <!-- Navigation Map -->
                 <div class="container">
-                    <div class="row">
-                    	<div class="col-xs-12 col-md-8 nav_map_box">
-                        	<iframe src="https://www.google.com/maps/embed/v1/search?q=Electric%20Car%20Charging%20Station&key=AIzaSyBbtbF9ZuW2cu4R3BgizRWGZZNnPaxSRRs" frameborder="0"></iframe>
-						</div><!-- end .nav_map_box -->
-                        
-                       	<!-- Directions -->
-                        <div id="directions" class="col-xs-12 col-md-4 text-center">
-                            <p class="h2">Directions</p>
-                            
-                            <div class="row instr">
-                            	<div class="col-xs-4">
-                                	<img src="images/r_arrow-01.jpg" alt="Right Turn" class="img-thumbnail img-turn" >
-                                </div>
-                                <div class="col-xs-8 text">
-                                	Turn Right at that street over there.
-                                </div>
-                        	</div> <!-- end .instr -->
-                               
-                          	<div class="row instr">  
-                                <div class="col-xs-4">
-                                	<img src="images/l_arrow-01.jpg" alt="Right Turn" class="img-thumbnail img-turn" >
-                                </div>
-                                <div class="col-xs-8 text">
-                                	Turn Left at the next street that you see.
-                                </div>
-                            </div><!-- end .instr -->
-                            
-                            <div class="row instr">  
-                                <div class="col-xs-4">
-                                	<img src="images/f_arrow-01.jpg" alt="Right Turn" class="img-thumbnail img-turn" >
-                                </div>
-                                <div class="col-xs-8 text">
-                                	Continue on that street for 8 miles.
-                                </div>
-                            </div><!-- end .instr -->
-                        
-                        </div><!-- end #directions -->
+                	<iframe class="col-xs-12" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=electric%20car%20charging%20station&key=AIzaSyBbtbF9ZuW2cu4R3BgizRWGZZNnPaxSRRs"></iframe>
+                </div>
+                
+                <div class="row">
+                    <!-- About Box -->
+                    <div id="about" class=" col-md-6 col-xs-offset-1 registration">
+                        <p>What is E-Charge Finder?<p>
+                        <p>E-Charge Finder is the fastest and easiest way to find chargin stations near you.  At Home, or on the go, E-Charge finder will get you moving.</p>
+                        <p>Find an electric charging station for your car is easy! Load the app with your GPS settings enabled, or search for a location by address or keyword</p>
+                    </div>
                     
-                    </div><!-- end .row -->
-                </div><!-- end .nav_map_box -->
-                
-                
-                
-			</div><!-- end #main --> 
+                    <!-- Register Box -->
+                    <div class="col-md-3 col-xs-offset-1 registration">
+                        <p>Not a Member?</p>
+                        <p>Members can save a Home address, favorite chargin stations, and more!  Click the button below to register with E-Charge Finder</p>
+                        
+                        <button type="button" class="btn btn-default pull-right userbtn">Register</button>
+                    </div>     
+                </div><!-- end .row -->
+			</div><!-- end #main -->
+        
         </div><!-- end .wrapper -->
         
-        <!-- Footer -->
+        
+        
         <footer>
         	<div class="row">
-            	<div class="col-xs-12">
-                    <a href="#">What?</a>
-                    <a href="#">How?</a>
-                    <a href="#">Support</a>
-                    <a href="#">FAQ</a>
-                    <a href="www.facebook.com"><img src="images/fb_logo_blue.png" class="icon" alt="Facebook link"> Facebook</a>
-                    <a href="www.twitter.com" class="lastlink"><img src="images/Twitter_logo_blue.png" class="icon" alt="Twitter link"> Twitter</a> 
-                    <p>&copy; 2014 E-Charge Finder</p>
-               	</div>
+           		<p class="panel-title col-xs-12">&copy; 2014 E-Charge Finder</p>
+                <div class="fbox col-xs-3">
+                	<p>E-Charge</p>
+                	<p><a href="#">Get Started</a></p>
+                    <p><a href="#">Log In</a></p>
+                </div>
+                <div class="fbox col-xs-3">
+                	<p>About</p>
+                    <p><a href="#">What we do</a></p>
+                    <p><a href="#">How it works</a></p>
+                </div>
+                <div class="fbox col-xs-3">
+                	<p>Help</p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#"></a></p>
+                </div>
+                <div class="fbox connect col-xs-3">
+                	<p>Connect</p>
+                    <p><a href="www.facebook.com"><img src="images/fb_logo_blue.png" class="icon" alt="Facebook link"> Facebook</a></p>
+                    <p><a href="www.twitter.com"><img src="images/Twitter_logo_blue.png" class="icon" alt="Twitter link"> Twitter</a></p>
+                </div>
             </div>
         </footer>
+        
  
     	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-1.11.1.min.js"></script>

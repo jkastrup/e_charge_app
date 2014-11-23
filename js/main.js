@@ -28,6 +28,18 @@
     }
     	
 	
+	// Register button at the bottom of index.html
+	$('.registration').find('button').click(function(){ 
+		//console.log('Click Successful');
+		$(location).attr('href', 'register.html');
+	});
+
+	// Favorites.html Cancel button 
+	$('.tmn').hover(function(){
+		$(this).addClass('hover');
+	}, function(){
+		$(this.removeClass('hover');
+	});
 	
 	
 })(jQuery); // End self-executing function

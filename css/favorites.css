@@ -2,11 +2,21 @@
 /* CSS Document */
 .tmn {
 	position: relative;
-	border: 2px solid #6CF;
-	background: #fff;
+	padding: 0;
 	height: 150px;
 	width: 150px;
 	margin: 10px;
+}
+.tmn:hover {
+	transform: scale(1.2);
+}
+.tmn iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	border: 3px solid #60C;
 	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -16,17 +26,58 @@
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
 }
-.tmn:hover {
-	transform: scale(1.2);
-}
 
 .padme {
 	padding-left: 50px;	
 }
 
+
+/* CHANGE SIZING (make smaller) */
+.cancel {
+	display: none;
+	position: absolute;
+	top:-20px;
+	right:-10px;
+	width:25px;
+	height: 25px;
+	padding-top: 2px;
+	cursor: pointer;
+	
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	
+	backgorund: #000;
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1)));
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	background: -o-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+
+	border-radius: 50%;
+	
+}
+.cancel:hover {
+	background: rgb(162,162,162);
+	background: -moz-linear-gradient(top,  rgba(162,162,162,1) 0%, rgba(81,81,81,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(162,162,162,1)), color-stop(100%,rgba(81,81,81,1)));
+	background: -webkit-linear-gradient(top,  rgba(162,162,162,1) 0%,rgba(81,81,81,1) 100%);
+	background: -o-linear-gradient(top,  rgba(162,162,162,1) 0%,rgba(81,81,81,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(162,162,162,1) 0%,rgba(81,81,81,1) 100%);
+	background: linear-gradient(to bottom,  rgba(162,162,162,1) 0%,rgba(81,81,81,1) 100%);
+
+}
+.tmn:hover .cancel, .tmn.hover .cancel { 
+	display: block;	
+}
+
+
+
+/*
 .cancel {
 	position: absolute;
-	top: -2px; /* Aligns cancel button with border of .tmn */
+	top: -2px; /* Aligns cancel button with border of .tmn 
 	right: -2px;
 	text-transform:lowercase;
 	padding-left: 5px;
@@ -65,7 +116,7 @@
 }
 
 
-
+*/
 
 
 

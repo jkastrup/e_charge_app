@@ -50,6 +50,7 @@ html, body {
 .form-signin .checkbox
 {
     font-weight: normal;
+	margin-left: 10px;
 }
 .form-signin .form-control
 {
@@ -65,6 +66,7 @@ html, body {
 {
     z-index: 2;
 }
+
 .form-signin input[type="text"]
 {
     margin-bottom: -1px;
@@ -105,13 +107,6 @@ html, body {
     margin-top: 10px;
 }
 
-/* Footer */
-footer {
-	position: relative;
-	margin-top: -200px; /* Negative value = Footer height */
-	height: 200px;
-	clear: both;
-} 
 	
 	
 	

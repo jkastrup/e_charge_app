@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Details */
+.title_box h4 {
+	color: #fff;
+	text-align: left;
+	padding-left: 15px;
+	margin-bottom: 0;
+}
+.nav_map_box {
+	margin-top: 5px;	
+}
+#map_canvas {
+	margin-top: 5px;
+	width: 750px;
+	height: 600px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/*  Directions Panel */
+#directions
+{
+	margin-top: 5px;
+	border: 2px solid #444;
+	height: 600px;
+	background-color: #fff;
+	color: #63C;
+	font-family: 'Montserrat', sans-serif;	
+	overflow: auto;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.37);
+
+}
+#directions .h2 {
+	border-bottom: 2px solid #444;
+	padding: 5px 0;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	text-shadow: none;
+}
+.instr {
+	margin-top: 10px;
+}
+.text {
+	text-align: left;
+	font-size: 1.1em;
+	margin-left: -20px;
+	padding-top: 10px;
+}
+.img-turn {
+	max-width: 72px;
+	max-height: 72px;
+}
