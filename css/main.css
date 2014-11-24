@@ -71,7 +71,28 @@ iframe {
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
 }
 
+
 /* Registration panels */
+#about {
+	background: url(../images/city_road.jpg);
+}
+#register {
+	background: url(../images/mtn_road.jpeg)
+}
+#about, #register {
+	background-size: cover;
+	opacity: 1.0;
+}
+#register p {
+	padding-top: 5px;
+}
+.registration.content:hover {
+	opacity: .5;
+}
+#about p:hover, #register p:hover{
+	opacity: 1.0;
+}
+
 .registration {
 	background-color: #fff;
 	color: #63c;
@@ -79,6 +100,7 @@ iframe {
 	padding: 15px;
 	margin-top: 50px;
 	font-family: 'Montserrat', sans-serif;	
+	z-index: 100;
 	
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -87,6 +109,22 @@ iframe {
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+}
+.registration h2 {
+	color: #fff;
+	float: right;
+	margin-top: 10px;
+}
+.registration p {
+	padding: 5px;
+	color: #fff;
+	opacity: 0;
+	z-index: 101;
+	background: rgba(102, 51, 204, 0.5);
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 .registration p:first-child {
 	color: #000;
@@ -219,23 +257,3 @@ footer p {
 		margin-right: 15px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

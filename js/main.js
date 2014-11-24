@@ -29,7 +29,7 @@
     	
 	
 	// Register button at the bottom of index.html
-	$('.registration').find('button').click(function(){ 
+	$('#registerMe').click(function(){ 
 		//console.log('Click Successful');
 		$(location).attr('href', 'register.html');
 	});
